@@ -10,42 +10,55 @@
 
 //PALINDROME AGAIN
 
-function checkPalindrome (string) {
-    const reversed = string.toUpperCase().split("").reverse().join("");
-    if (reversed === string.toUpperCase()) {
-        return true;
-    } else {
-        return false;
-    }
-}
-console.log(checkPalindrome('Radar'));
-console.log(checkPalindrome("Borscht"));
+// function checkPalindrome (string) {
+//     const reversed = string.toUpperCase().split("").reverse().join("");
+//     if (reversed === string.toUpperCase()) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(checkPalindrome('Radar'));
+// console.log(checkPalindrome("Borscht"));
 
 //////////////////////////////////////////////////////////
 
 //3 Digit Sum
 
-function sumDigits (num) {
-    const myArray = [];
-    let digit = num.toString();
+// function sumDigits (num) {
+//     const myArray = [];
+//     let digit = num.toString();
+//     let sum = 0;
+
+//     for (let i = 0; i <digit.length; i++) {
+//         myArray[i] = digit.charAt(i);
+//     };
+//     for (let i = 0; i < digit.length; i++) {
+//         sum += parseInt(myArray[i]);
+//     }
+//     console.log(sum);
+// };
+
+// sumDigits(42);
+
+// //4 Pythogoras
+
+// function calculateSide (sideA, sideB) {
+//     let sideC = 0;
+//     sideC = Math.sqrt(Math.pow(sideA,2) + Math.pow(sideB,2));
+//     return console.log(sideC);
+// }
+// calculateSide(10,20);
+
+//5 Sum Array
+numArray = [1, 2, 3, 4, 5, 6];
+function sumArray (arr) {
     let sum = 0;
 
-    for (let i = 0; i <digit.length; i++) {
-        myArray[i] = digit.charAt(i);
+    for (i = 0; i < numArray.length; i++) {
+        sum += numArray[i];
     };
-    for (let i = 0; i < digit.length; i++) {
-        sum += parseInt(myArray[i]);
-    }
     console.log(sum);
-};
-
-console.log(sumDigits(42));
-
-//4 Pythogoras
-
-function calculateSide (sideA, sideB) {
-    let sideC = 0;
-    sideC = Math.sqrt(Math.pow(sideA,2) + Math.pow(sideB,2));
-    return console.log(sideC);
 }
-calculateSide(10,20);
+sumArray(numArray);
+
