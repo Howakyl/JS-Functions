@@ -40,3 +40,12 @@ function sumDigits (num) {
 };
 
 console.log(sumDigits(42));
+
+//4 Pythogoras
+
+function calculateSide (sideA, sideB) {
+    let sideC = 0;
+    sideC = Math.sqrt(Math.pow(sideA,2) + Math.pow(sideB,2));
+    return console.log(sideC);
+}
+calculateSide(10,20);
