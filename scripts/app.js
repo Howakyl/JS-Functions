@@ -22,3 +22,21 @@ console.log(checkPalindrome('Radar'));
 console.log(checkPalindrome("Borscht"));
 
 //////////////////////////////////////////////////////////
+
+//3 Digit Sum
+
+function sumDigits (num) {
+    const myArray = [];
+    let digit = num.toString();
+    let sum = 0;
+
+    for (let i = 0; i <digit.length; i++) {
+        myArray[i] = digit.charAt(i);
+    };
+    for (let i = 0; i < digit.length; i++) {
+        sum += parseInt(myArray[i]);
+    }
+    console.log(sum);
+};
+
+console.log(sumDigits(42));
